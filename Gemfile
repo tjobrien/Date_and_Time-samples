@@ -10,6 +10,7 @@ gem "chronic", "~> 0.6.4"
 gem "event-calendar", "~> 2.3.3", :require => 'event_calendar'
 gem "formtastic", "~> 2.0.2"
 gem "nifty-generators", :group => :development
+gem "validates_timeliness", "~> 3.0.7"
 # Use unicorn as the web server
 # gem 'unicorn'
 

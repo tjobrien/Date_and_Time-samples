@@ -1,0 +1,9 @@
+Using this gem for date_validation
+http://rubygems.org/gems/validates_timeliness
+Here is another one:
+http://rubygems.org/gems/date_validator
+
+In rails there is
+
+	<%=select_time %>
+and time_select

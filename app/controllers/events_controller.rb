@@ -13,9 +13,6 @@ class EventsController < ApplicationController
 
   def create
     @event = Event.new(params[:event])
-    raise @event.inspect
-    @event.start_at = Chronic.parse(@event.start_at)
-
     if @event.save
       redirect_to @event, :notice => "Successfully created event."
     else

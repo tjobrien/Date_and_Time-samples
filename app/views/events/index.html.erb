@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+	<th>Start At Date</th>
     <th>Start At</th>
     <th>End At</th>
     <th>All Day</th>
@@ -10,6 +11,7 @@
   <% for event in @events %>
     <tr>
       <td><%= event.name %></td>
+	  <td><%= event.start_at_date %></td>
       <td><%= event.start_at %></td>
       <td><%= event.end_at %></td>
       <td><%= event.all_day %></td>

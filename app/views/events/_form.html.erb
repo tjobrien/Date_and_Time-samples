@@ -1,11 +1,20 @@
 <%= semantic_form_for @event do |f| %>
     <%= f.inputs do %>
 		<%= f.input :name %>
-		<%= f.input :start_at, :as => :string %>
-		<%= f.input :duration %>
+		<%= f.input :start_at_date, :as => :string %>
+		<%= f.input :start_at_hour, :as => :select, :collection => (1..12).to_a %>
+		<%= f.input :start_at_minute, :as => :select, :collection => [["00", "00"], 15, 30, 45] %>
+		<%= f.input :am_pm, :as => :select, :collection => ["AM", "PM"] %>
+		<%= f.input :duration, :as => :select, :collection => Event::DURATIONS %>
+		<%= f.input :start_time %>
+		<%= f.input :start_at %>
+		<%= f.input :end_at %>
 		<%= f.input :all_day %>
 	<% end %>
     <%= f.buttons do %>
 	      <%= f.commit_button %>
 	<% end %>
+	<%=select_time %>
 <% end %>
+
+

@@ -11,16 +11,21 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111221023511) do
+ActiveRecord::Schema.define(:version => 20111221210128) do
 
   create_table "events", :force => true do |t|
     t.string   "name"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.boolean  "all_day",    :default => false
+    t.boolean  "all_day",         :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "duration"
+    t.date     "start_at_date"
+    t.integer  "start_at_hour"
+    t.string   "start_at_minute"
+    t.time     "start_time"
+    t.string   "am_pm",           :default => "AM"
   end
 
 end
