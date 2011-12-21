@@ -1,0 +1,23 @@
+<% title "Event" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+<p>
+  <strong>Start At:</strong>
+  <%= @event.start_at %>
+</p>
+<p>
+  <strong>End At:</strong>
+  <%= @event.end_at %>
+</p>
+<p>
+  <strong>All Day:</strong>
+  <%= @event.all_day %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_event_path(@event) %> |
+  <%= link_to "View All", events_path %>
+</p>

@@ -1,0 +1,11 @@
+<%= semantic_form_for @event do |f| %>
+    <%= f.inputs do %>
+		<%= f.input :name %>
+		<%= f.input :start_at, :as => :string %>
+		<%= f.input :duration %>
+		<%= f.input :all_day %>
+	<% end %>
+    <%= f.buttons do %>
+	      <%= f.commit_button %>
+	<% end %>
+<% end %>
