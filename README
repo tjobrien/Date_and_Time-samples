@@ -14,6 +14,6 @@ Event befor_save callback.  In the same method, I create the end_at by using rai
 I use the all_day flag.  As the has_event_calendar method has a before_save call in it, the date parsing I needed to create these dates was
 failing.  I put the has_event_calendar below the before_save :date_parser call and then event_calendar can do its thing as it has a start_date.
 
-3.  The rest is pretty straight foward...there are few extra date and time fields in the views/events/_form.html.erb so you can see how those look too.
+3.  The rest is pretty straight forward...there are few extra date and time fields in the views/events/_form.html.erb so you can see how those look too.
 4. No testing..I know.
 
